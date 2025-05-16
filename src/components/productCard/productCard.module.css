@@ -1,0 +1,102 @@
+.card {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  border-radius: 12px;
+  padding: 16px;
+  background-color: #EFF4F8;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease;
+  margin: 0 auto; /* Centers the card horizontally */
+}
+
+.discount {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 70px;
+  height: 30px;
+  background-color: #5E9A13; /* Updated green color */
+  color: #fff;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  z-index: 1;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h2 {
+  color: #000000; /* Changed to black */
+  font-size: 2rem;
+  margin: 12px 0 4px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.card p {
+  color: #5E9A13; /* Updated green color */
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  margin-top: 40px;
+  object-fit: cover;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 12px;
+  margin-bottom: 60px; /* increased bottom margin */
+}
+
+.buttons button {
+  background-color: #5E9A13;
+  color: #fff;
+  border: none;
+  width: 250px;
+  height: 60px;
+  font-size: 25px;
+  padding: 10px 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 40px; /* increased bottom margin */
+}
+
+
+.buttons button:hover {
+  background-color: #4A7A0F; /* Slightly darker shade for hover effect */
+}
+
+.error {
+  color: #d32f2f;
+  font-size: 0.9rem;
+  margin-top: 8px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 450px;
+  }
+}
