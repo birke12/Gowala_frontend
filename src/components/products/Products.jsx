@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
-import ProductCard from "../components/productCard/ProductCard";
-import { useFetchProducts } from "../hooks/useFetchProducts";
-import { ReactClipLoader } from "../components/loading/ReactLoader";
+import ProductCard from "../productCard/ProductCard";
+import { useFetchProducts } from "../../hooks/useFetchProducts";
+import { ReactClipLoader } from "../loading/ReactLoader";
 
 const Products = () => {
   const { products, refetch, error, isLoading } = useFetchProducts();

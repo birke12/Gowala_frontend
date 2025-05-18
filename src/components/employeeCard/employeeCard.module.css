@@ -1,0 +1,53 @@
+.card {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: flex-end;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    backdrop-filter: blur(3px);
+  }
+  
+  .overlay h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .overlay p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+  
+  .overlay button {
+    margin-top: 0.5rem;
+    background: #5e9a13;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease;
+  }
+  
+  .overlay button:hover {
+    background: #4d7c10;
+  }
+  
