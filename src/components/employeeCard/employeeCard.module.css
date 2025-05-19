@@ -6,7 +6,7 @@
     background-position: center;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
     display: flex;
     align-items: flex-end;
     transition: transform 0.3s ease;
@@ -17,22 +17,31 @@
   }
   
   .overlay {
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
+    background: rgba(249, 239, 239, 0.8);
+    color: #000000;
     padding: 1rem;
     width: 100%;
     text-align: center;
     backdrop-filter: blur(3px);
+    margin: 25px;
+    margin-bottom: 35px;
   }
   
   .overlay h2 {
-    margin: 0;
-    font-size: 1.5rem;
+   
+    font-size: 2rem;
+    margin-top: 20px;
   }
   
   .overlay p {
-    margin: 0.5rem 0;
+   
     font-size: 1rem;
+    max-width: 430px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    margin-top: 30px;
+    font-size: 24px;
   }
   
   .overlay button {

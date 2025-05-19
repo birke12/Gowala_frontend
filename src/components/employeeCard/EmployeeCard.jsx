@@ -1,7 +1,7 @@
 import styles from "./employeeCard.module.css";
 import Swal from "sweetalert2";
 
-const EmployeeCard = ({ employee, onContact }) => {
+const EmployeeCard = ({ employee, onContact, showText }) => {
   const handleContact = () => {
     Swal.fire({
       title: `Kontakt ${employee.name}`,
@@ -23,7 +23,7 @@ const EmployeeCard = ({ employee, onContact }) => {
       style={{ backgroundImage: `url(${employee.image})` }}
     >
       <div className={styles.overlay}>
-        <p>{employee.text}</p>
+        {showText && <p>{employee.text}</p>} {/* 👈 Only show on first card */}
         <h2>{employee.name}</h2>
         <p>{employee.role}</p>
       </div>

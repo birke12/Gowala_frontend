@@ -16,14 +16,22 @@ const Employees = () => {
 
   return (
     <article>
-      <h1>Medarbejdere</h1>
+      <div className="staffTextContainer">
+        <h1 className="staffTitle">Vores Hold</h1>
+        <h2 className="staffSubtitle">2000+ ansatte siden 1975</h2>
+        <p className="staffText">
+          De ansatte på Gowala Farms er passionerede fagfolk, der med omsorg og
+          ekspertise sikrer sunde dyr og produkter af højeste kvalitet.
+        </p>
+      </div>
       <div className="grid">
         {error && <h5>{error}</h5>}
-        {employeesToDisplay.map((employee) => (
+        {employeesToDisplay.map((employee, index) => (
           <EmployeeCard
             employee={employee}
             key={employee._id}
             onContact={() => console.log("Kontakt", employee.name)}
+            showText={index === 0} // 👈 Only true for the first employee
           />
         ))}
       </div>
