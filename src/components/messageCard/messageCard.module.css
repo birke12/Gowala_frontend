@@ -1,0 +1,97 @@
+.messageCard {
+  list-style: none;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: rgba(0, 0, 255, 0.06);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  margin: 12px auto;
+  height: fit-content;
+  padding: 16px;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.messageCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+.message {
+  list-style: none;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: rgba(0, 0, 255, 0.06);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  margin: 12px auto;
+  padding: 16px;
+  width: max-content;
+  border-radius: 12px;
+
+  span {
+    display: block;
+    margin: 5px 0;
+  }
+}
+
+.column {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.column p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.column span {
+  font-size: 0.75rem;
+  color: #333;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.buttons button {
+  padding: 6px 12px;
+  border: none;
+  background-color: #3085d6;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.buttons button:hover {
+  background-color: #256bb2;
+}
+
+.buttons button:nth-child(2) {
+  background-color: #d33;
+}
+
+.buttons button:nth-child(2):hover {
+  background-color: #aa1f1f;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px;
+}
+
+.isRead {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

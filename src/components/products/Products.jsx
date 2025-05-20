@@ -3,25 +3,24 @@ import ProductCard from "../productCard/ProductCard";
 import { useFetchProducts } from "../../hooks/useFetchProducts";
 import { ReactClipLoader } from "../loading/ReactLoader";
 
-const Products = () => {
+const Products = ({ title, subtitle, text }) => {
   const { products, refetch, error, isLoading } = useFetchProducts();
   const location = useLocation();
 
   const isHome = location.pathname === "/";
-
   const productsToDisplay = isHome ? products.slice(0, 4) : products;
 
-  const textContent = isHome
-    ? {
-        title: "Vores Hold",
-        subtitle: "2000+ ansatte siden 1975",
-        text: "De ansatte på Gowala Farms er passionerede fagfolk, der med omsorg og ekspertise sikrer sunde dyr og produkter af højeste kvalitet.",
-      }
-    : {
-        title: "Alle Produkter",
-        subtitle: "Opdag vores brede sortiment",
-        text: "Her finder du hele udvalget af vores kvalitetsprodukter – nøje udvalgt til dig, der ønsker det bedste.",
-      };
+  const defaultContent = {
+    title: "Alle Produkter",
+    subtitle: "Vi har udvalgt de bedste produkter",
+    text: "Her finder du et udvalg af friske mejeriprodukter og kvalitetskød fra Gowala Farms – direkte fra gården til dit bord.",
+  };
+
+  const textContent = {
+    title: title || defaultContent.title,
+    subtitle: subtitle || defaultContent.subtitle,
+    text: text || defaultContent.text,
+  };
 
   if (isLoading) return <ReactClipLoader />;
 

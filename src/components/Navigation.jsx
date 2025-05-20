@@ -34,6 +34,9 @@ const Navigation = () => {
           <li>
             <NavLink to="/checkout">Checkout</NavLink>
           </li>
+          <li>
+            <NavLink to="/backoffice">Backoffice</NavLink>
+          </li>
         </ul>
 
         <div className="cart-icon">

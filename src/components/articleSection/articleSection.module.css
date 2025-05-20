@@ -3,7 +3,7 @@
   background-color: white;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
   cursor: pointer;
   margin: 1rem 0;
   flex-direction: column;
@@ -11,8 +11,10 @@
 
 .imageContainer {
   flex: 1;
-  min-width: 40%;
-  max-width: 300px;
+
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .imageContainer img {
@@ -49,11 +51,12 @@
 .checkList li {
   display: flex;
   align-items: center;
-  margin-bottom: 0.75rem;
+  margin-bottom: 20px;
 }
 
 .icon {
   color: #4caf50;
   margin-right: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  margin-right: 20px;
 }

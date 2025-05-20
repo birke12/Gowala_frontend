@@ -24,7 +24,7 @@ const Employees = () => {
           ekspertise sikrer sunde dyr og produkter af højeste kvalitet.
         </p>
       </div>
-      <div className="grid">
+      <div className="gridStaff">
         {error && <h5>{error}</h5>}
         {employeesToDisplay.map((employee, index) => (
           <EmployeeCard
