@@ -1,3 +1,4 @@
+import Footer from "../components/footer/Footer";
 import PageHeader from "../components/pageHeader/PageHeader";
 import Products from "../components/products/Products";
 
@@ -15,6 +16,7 @@ const Shop = () => {
         subtitle="Alt på ét sted"
         text="Her på siden finder du alle vores friske mejeriprodukter og kvalitetskød fra Gowala Farms – direkte fra gården til dit bord."
       />
+      <Footer />
     </section>
   );
 };

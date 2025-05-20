@@ -52,10 +52,11 @@
 }
 
 .icon {
-  font-size: 1.2rem;
-  color: #3c7d3e;
+  font-size: 2.2rem;
+  color: #4da450;
   min-width: 20px;
   margin-top: 3px;
+  margin-right: 20px;
 }
 
 .textColumn {
