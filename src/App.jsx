@@ -5,12 +5,14 @@ import Shop from "./pages/Shop";
 import Services from "./pages/Services";
 import Backoffice from "./pages/backoffice/Backoffice";
 import ProtectedRoute from "./components/ProtectedRoute";
+import About from "./pages/About";
 
 function App() {
   const routes = useRoutes([
     { path: "/", element: <Home /> },
     { path: "/shop", element: <Shop /> },
     { path: "/services", element: <Services /> },
+    { path: "/om", element: <About /> },
     /* Backoffice kan kun tilgås for brugere med admin-rolle */
     {
       path: "/backoffice",

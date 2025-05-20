@@ -18,6 +18,14 @@
   justify-items: center;
   
 }
+ .gridStaff {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+  padding: 1rem;
+  justify-items: center;
+  
+}
 
 .staffTextContainer {
   display: flex;

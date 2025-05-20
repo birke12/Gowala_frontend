@@ -1,0 +1,101 @@
+.footer {
+  color: #333;
+
+  padding-bottom: 2rem; /* Leave room for bottomSection */
+  position: relative;
+}
+
+.overlay {
+  border-radius: 8px;
+}
+
+.topSection {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  background: url("../../../../public/background/footer_bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center bottom; /* Start here */
+
+  /* Shift it right */
+  background-position: calc(0%) bottom;
+
+  padding: 30px;
+  padding-top: 100px;
+}
+
+.logo {
+  max-width: 100px;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1rem;
+  max-width: 300px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding-bottom: 60px;
+  padding-top: 40px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-bottom: 450px;
+}
+
+.contactRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.icon {
+  font-size: 1.2rem;
+  color: #3c7d3e;
+  min-width: 20px;
+  margin-top: 3px;
+}
+
+.textColumn {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.bottomSection {
+  text-align: center;
+  font-size: 0.85rem;
+
+  color: #000000;
+}
+
+.credit {
+  color: #a5d6a7;
+  font-weight: bold;
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  .topSection {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .description {
+    max-width: 350px;
+    margin-bottom: 0;
+  }
+
+  .logo {
+    margin-bottom: 0;
+  }
+
+  .contact {
+    flex: 1;
+  }
+}

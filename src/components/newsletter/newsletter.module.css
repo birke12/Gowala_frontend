@@ -24,7 +24,7 @@
   
   
   .heading {
-    font-size: 3.25rem;
+    font-size: 2.25rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
     padding-top: 3rem;
@@ -32,7 +32,7 @@
   
   .highlight {
     color: #4caf50;
-    font-size: 3.20rem;
+    font-size: 2.20rem;
     font-weight: 500;
     margin-bottom: 3.4rem;
     line-height: 1;
@@ -40,7 +40,7 @@
   
   .subtext {
     color: #000000;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     padding-bottom: 4.5rem;
     line-height: 1.5;
     font-weight: 500;
@@ -53,19 +53,19 @@
   }
   
   .input {
-    padding: 1.6rem 1rem;
+    padding: 1rem .6rem;
     margin-left: 25px;
     margin-right: 25px;
-    font-size: 1.4rem;
+    font-size: 1rem;
     margin: 20px;
 }
 
 .button {
     background-color: #4caf50;
     color: white;
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 600;
-    padding: 1.6rem;
+    padding: 1rem;
     border: none;
     margin-left: 25px;
     margin-right: 25px;
