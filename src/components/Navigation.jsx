@@ -29,7 +29,7 @@ const Navigation = () => {
             <NavLink to="/om">Om</NavLink>
           </li>
           <li>
-            <NavLink to="/kontakt">Kontakt</NavLink>
+            <NavLink to="/contact">Kontakt</NavLink>
           </li>
           <li>
             <NavLink to="/checkout">Checkout</NavLink>

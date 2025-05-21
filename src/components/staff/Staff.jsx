@@ -10,7 +10,7 @@ const Employees = () => {
   const location = useLocation();
 
   const employeesToDisplay =
-    location.pathname === "/" ? employees.slice(0, 4) : employees;
+    location.pathname === "/" ? employees.slice(0, 6) : employees;
 
   if (isLoading) return <ReactClipLoader />;
 

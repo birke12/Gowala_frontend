@@ -1,62 +1,75 @@
+.cardContainer {
+  position: relative;
+  width: 100%;
+  
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(227, 237, 246);
+  
+}
 .card {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 3 / 4;
-    background-size: cover;
-    background-position: center;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-    display: flex;
-    align-items: flex-end;
-    transition: transform 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: scale(1.02);
-  }
-  
-  .overlay {
-    background: rgba(249, 239, 239, 0.8);
-    color: #000000;
-    padding: 1rem;
-    width: 100%;
-    text-align: center;
-    backdrop-filter: blur(3px);
-    margin: 25px;
-    margin-bottom: 35px;
-  }
-  
-  .overlay h2 {
-   
-    font-size: 2rem;
-    margin-top: 20px;
-  }
-  
-  .overlay p {
-   
-    font-size: 1rem;
-    max-width: 430px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    line-height: 1.8;
-    margin-top: 30px;
-    font-size: 24px;
-  }
-  
-  .overlay button {
-    margin-top: 0.5rem;
-    background: #5e9a13;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: background 0.3s ease;
-  }
-  
-  .overlay button:hover {
-    background: #4d7c10;
-  }
-  
+  position: relative;
+  width: 100%;
+  margin: 15px;
+  aspect-ratio: 3 / 4;
+  background-size: cover;
+  background-position: center;
+/* margin-top: 10px;
+margin-bottom: 10px; */
+  overflow: hidden;
+ 
+  display: flex;
+  align-items: flex-end;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.overlay {
+  background: rgba(249, 239, 239, 0.8);
+  color: #000000;
+  padding: 0.1rem;
+  width: 100%;
+  text-align: center;
+  backdrop-filter: blur(3px);
+  margin: 20px;
+  margin-bottom: 35px;
+}
+
+.overlay h2 {
+  font-size: 1.7rem;
+  margin-top: 20px;
+}
+
+.overlay p {
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  line-height: 1.8;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.overlay button {
+  margin-top: 0.5rem;
+  background: #5e9a13;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.overlay button:hover {
+  background: #4d7c10;
+}

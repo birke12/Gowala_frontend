@@ -18,16 +18,19 @@ const EmployeeCard = ({ employee, onContact, showText }) => {
   };
 
   return (
-    <li
-      className={styles.card}
-      style={{ backgroundImage: `url(${employee.image})` }}
-    >
-      <div className={styles.overlay}>
-        {showText && <p>{employee.text}</p>} {/* 👈 Only show on first card */}
-        <h2>{employee.name}</h2>
-        <p>{employee.role}</p>
-      </div>
-    </li>
+    <div className={styles.cardContainer}>
+      <li
+        className={styles.card}
+        style={{ backgroundImage: `url(${employee.image})` }}
+      >
+        <div className={styles.overlay}>
+          {showText && <p>{employee.text}</p>}{" "}
+          {/* 👈 Only show on first card */}
+          <h2>{employee.name}</h2>
+          <p>{employee.role}</p>
+        </div>
+      </li>
+    </div>
   );
 };
 

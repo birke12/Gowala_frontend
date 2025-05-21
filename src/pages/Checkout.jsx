@@ -1,23 +1,23 @@
-import Articles from "../components/articles/Articles";
+
 import Footer from "../components/footer/Footer";
-import Newsletter from "../components/newsletter/Newsletter";
 import PageHeader from "../components/pageHeader/PageHeader";
 import ContactBg from "../../public/background/page_header_01.jpg";
+import Cart from "../components/cart/Cart";
 
 
-const Services = () => {
+const Checkout = () => {
   return (
     <section>
       <PageHeader
-        title="Gowala tilbyder"
-        subtitle="Hvad vi tilbyder vores forbrugere"
+        title="Gowala shopping"
+        subtitle="Færdiggør din bestilling"
         background={ContactBg}
       />
-      <Articles />
-      <Newsletter />
+      <Cart />
+    
       <Footer />
     </section>
   );
 };
 
-export default Services;
+export default Checkout;

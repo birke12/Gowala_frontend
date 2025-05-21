@@ -1,12 +1,14 @@
 import { useState } from "react";
-import styles from "./productCard.module.css";
+import { useCart } from "../context/CartContext"; // ✅ update path if needed
 import Swal from "sweetalert2";
+import styles from "./productCard.module.css";
 
-const ProductCard = ({ product, onAddToCart }) => {
+const ProductCard = ({ product }) => {
   const [isAdded, setIsAdded] = useState(false);
+  const { addToCart } = useCart();
 
   const handleAddToCart = () => {
-    onAddToCart(product);
+    addToCart(product);
     setIsAdded(true);
     Swal.fire({
       title: "Tilføjet til kurv!",

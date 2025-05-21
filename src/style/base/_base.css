@@ -18,14 +18,19 @@
   justify-items: center;
   
 }
- .gridStaff {
+.gridStaff {
   display: grid;
   grid-template-columns: 1fr;
   gap: 5rem;
   padding: 1rem;
   justify-items: center;
-  
+
+  background-image: url('../../../public/blob/blob_02.jpg'); /* ✅ Replace with actual path */
+  background-size: cover;      /* Cover entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
 }
+
 
 .staffTextContainer {
   display: flex;
