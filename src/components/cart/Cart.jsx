@@ -32,9 +32,14 @@ const Cart = () => {
                   <p className={styles.price}>{item.price} ,-</p>
 
                   <div className={styles.quantityControls}>
-                    <button onClick={() => decreaseQty(item._id)}>-</button>
+                    <button
+                      className={styles.qtyButton}
+                      onClick={() => decreaseQty(item._id)}
+                    >
+                      -
+                    </button>
                     <span>{item.quantity}</span>
-                    <button onClick={() => increaseQty(item._id)}>+</button>
+                    <button  onClick={() => increaseQty(item._id)}>+</button>
                   </div>
                 </div>
 
