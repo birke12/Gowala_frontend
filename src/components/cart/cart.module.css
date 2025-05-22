@@ -49,4 +49,48 @@
     font-weight: bold;
     margin-top: 5px;
   }
+
+  .quantityControls {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }
   
+  .qtyButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+   
+    color: white;
+    border: none;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    margin-right: 10px;
+  }
+
+  .qtyButtonPlus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+   
+    color: white;
+    border: none;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    margin-left: 10px;
+  }

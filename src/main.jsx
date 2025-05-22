@@ -10,7 +10,6 @@ createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <CartProvider>
         {" "}
-        {/* ✅ Wrap App here */}
         <App />
       </CartProvider>
     </BrowserRouter>
